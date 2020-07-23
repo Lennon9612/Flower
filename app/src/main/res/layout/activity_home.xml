@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:id="@+id/activity_home"
+    tools:context="com.catchmind.FlowerClassificationApplication.MainActivity"
+    android:background="#ECE6CC"
+    >
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:src="@drawable/icon_flower"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="8dp"
+        >
+
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="9"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:id="@+id/btnGallery"
+            android:background="@drawable/custom_button"
+            android:textColor="#ffffff"
+            android:text="Gallery"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="3"
+            android:layout_marginRight="8dp"
+            >
+
+        </Button>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@drawable/custom_button"
+            android:textColor="#ffffff"
+            android:text="URL"
+            android:id="@+id/btnUrl"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="3"
+            android:layout_marginRight="8dp"
+            >
+
+        </Button>
+        <Button
+            android:layout_width="wrap_content"
+            android:id="@+id/btnCamera"
+            android:layout_height="50dp"
+            android:background="@drawable/custom_button"
+            android:textColor="#ffffff"
+            android:text="Camera"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="3"
+            android:layout_marginRight="8dp"
+            >
+
+        </Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10"
+        >
+
+        <ImageView
+            android:id="@+id/cameraView"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:src="@drawable/icon_forest"
+            android:layout_marginBottom="32dp"
+            android:layout_weight="9">
+
+        </ImageView>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_button"
+            android:textColor="#ffffff"
+            android:text="Find This Flower"
+            android:id="@+id/btnFind"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="1">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btnUnsplash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:layout_weight="9"
+            android:background="@drawable/custom_button"
+            android:text="Search on Unsplash"
+            android:textColor="#ffffff">
+        </Button>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
